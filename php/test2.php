@@ -30,4 +30,5 @@ WHERE creditlimit > 1000"")) {
 
 /* close connection */
 $mysqli->close();
+
 ?>

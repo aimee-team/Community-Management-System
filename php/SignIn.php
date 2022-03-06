@@ -36,12 +36,12 @@ catch (PDOException $e)
 	
 if (password_verify($Password,$hash)){
 	session_start();
-    $message = "Welcome !!!! You have successfully logged in to our website.";
+  $message = "Welcome !!!! You have successfully logged in to our website.";
 	$_SESSION["user_id"] = $UserId;
 	$_SESSION["first_name"] = $FirstName;
 	$_SESSION["last_name"] = $LastName;
 	$_SESSION["email"] = $userEmail;
-        $_SESSION["Privilege"] = $Privilege;
+  $_SESSION["Privilege"] = $Privilege;
 	
 if ($Privilege == "Manager")
 {
